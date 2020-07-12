@@ -236,3 +236,27 @@
     }
 
 }
+
+
+
+/* Desktop Devices */
+
+@media(min-width:901px) {
+
+    .ray img {
+        display: inline-block;
+    }
+    
+    .michelle img {
+        display: inline-block;
+    }
+    
+    .reagan img {
+        display: inline-block;
+    }
+    
+    .rj img {
+        display: inline-block;
+    }
+
+}
