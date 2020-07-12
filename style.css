@@ -17,6 +17,9 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    position: fixed;
+    width: 100%;
+    margin: auto;
 }
 
 .header {
@@ -42,14 +45,10 @@
 }
 
 .nav li {
+    color: white;
+    text-decoration: underline;
     display: inline-block;
-    text-decoration: none;
     font-size: 70%;
-    
-}
-
-.nav a {
-    color: rgb(255, 255, 255);
     
 }
 
@@ -213,4 +212,27 @@
     font-size: 120%;
     margin-top: 75px;
     box-sizing: border-box;
+}
+
+
+/* Tablet Devices */
+
+@media(min-width: 600px) and (max-width:900px) {
+
+    .ray img {
+        display: inline-block;
+    }
+    
+    .michelle img {
+        display: inline-block;
+    }
+    
+    .reagan img {
+        display: inline-block;
+    }
+    
+    .rj img {
+        display: inline-block;
+    }
+
 }
