@@ -1,0 +1,216 @@
+.container {
+ display: grid;
+ grid-template-rows: auto auto 1fr auto;
+ grid-template-areas: 
+ "hd"
+ "nv"
+ "bd"
+ "ft";
+ grid-template-columns: 1fr;
+ height: 100%;
+ font-size: 20px;
+
+}
+
+.top-of-page {
+    background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(../images/reagan.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    grid-area: hd;
+    width: 100%;
+}
+
+.header h1 {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+}
+
+.nav {
+    grid-area: nv;
+    align-items: center;
+}
+
+.nav ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 70%;
+    
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    
+}
+
+/* Content */
+
+.content {
+    grid-area: bd;
+}
+
+/* About Me */
+
+.about-me {
+    text-align: center;
+
+}
+
+.about-me h2 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgba(2, 26, 158, 0.829);
+}
+
+.about-me p {
+    font-family: 'Bangers', cursive;
+    color: rgba(189, 4, 4, 0.829);
+    font-size: 120%;
+}
+
+/* Family */
+
+.family {
+    text-align: center;
+    color: rgba(2, 26, 158, 0.829);
+    font-size: 120;
+}
+
+.family h2 {
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: rgba(2, 26, 158, 0.829);
+}
+
+.name {
+    color: black;
+    font-size: 150%;
+}
+
+.ray img {
+    display: none;
+}
+
+.michelle img {
+    display: none;
+}
+
+.reagan img {
+    display: none;
+}
+
+.rj img {
+    display: none;
+}
+
+/* Interest */
+
+.interest {
+    text-align: center;
+
+}
+
+.interest h2 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgba(2, 26, 158, 0.829);
+}
+
+.interest p {
+    font-family: 'Bangers', cursive;
+    color: rgba(189, 4, 4, 0.829);
+    font-size: 120%;
+}
+
+
+/* Schools */
+
+.schools {
+    text-align: center;
+}
+
+.schools h2 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgba(2, 26, 158, 0.829);
+}
+
+.schools ul, li{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    color: rgba(189, 4, 4, 0.829);
+    font-size: 120%;
+    text-decoration: underline;
+    text-decoration-color: rgba(189, 4, 4, 0.829);
+    font-weight: 200;
+    margin-bottom: 10px;
+
+}
+
+.schools li:link, :visited {
+    margin-bottom: 8px;
+    font-size: 120%;
+    color: rgba(189, 4, 4, 0.829);
+}
+
+.schools li:hover {
+    margin-bottom: 15px;
+    color: rgba(2, 26, 158, 0.829);
+    font-size: 130%;
+    transition: ease 0.2s;
+}
+
+
+/* Contact Me */
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 120%;
+
+}
+
+.contact-me a:link, :visited {
+    margin-bottom: 8px;
+    font-size: 120%;
+    color: rgba(189, 4, 4, 0.829);
+}
+
+.contact-me a:hover {
+    margin-bottom: 15px;
+    color: rgba(2, 26, 158, 0.829);
+    font-size: 130%;
+    transition: ease 0.2s;
+}
+
+.contact-me h2 {
+    margin-bottom: 30px;
+    text-decoration: underline;
+    text-decoration-color: rgba(2, 26, 158, 0.829);
+}
+
+
+/* Footer */
+
+.footer {
+    grid-area: ft;
+    background-color: rgba(189, 4, 4, 0.829);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 120%;
+    margin-top: 75px;
+    box-sizing: border-box;
+}
